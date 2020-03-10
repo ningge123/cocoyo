@@ -1,0 +1,6 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~summernote/dist/summernote-bs4.css";
+@import "~owl.carousel/dist/assets/owl.carousel.min.css";
+@import "~owl.carousel/dist/assets/owl.theme.default.min.css";
+@import './style.css';
+@import './components.css';
