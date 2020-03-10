@@ -1,24 +1,25 @@
-# cocoyo
+### cocoyo
 
-## Project setup
-```
-npm install
-```
+这个可能是论坛、博客、各种集成、基于心情开发。
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+> 🏵 后端源码：https://github.com/ningge123/cocoyo.api
 
-### Compiles and minifies for production
-```
-npm run build
-```
+> 如果你有兴趣参与改进，请直接 PR 即可。
 
-### Lints and fixes files
-```
-npm run lint
+## 安装
+
+克隆后先安装依赖：
+
+```shell
+$ npm install
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+运行:
+
+```shell
+$ npm run serve
+```
+
+## License
+
+MIT
