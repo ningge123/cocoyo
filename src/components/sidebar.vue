@@ -9,11 +9,11 @@
       </div>
       <ul class="sidebar-menu">
         <li class="active">
-          <a class="nav-link" href="/">
+          <router-link class="nav-link" to="/">
             <i class="fab fa-fort-awesome"></i>首页
-          </a>
+          </router-link>
         </li>
-        <li class="active">
+        <li>
           <a class="nav-link" href="/">
             <i class="fas fa-store"></i>商店
           </a>
@@ -35,10 +35,10 @@
         </li>-->
         <li class="menu-header">我的</li>
         <li>
-          <a class="nav-link" href="/user/profile">
+          <router-link class="nav-link" to="/files">
             <i class="fas fa-user"></i>
             <span>网盘</span>
-          </a>
+          </router-link>
         </li>
         <li class="menu-header">待添加功能</li>
         <li>

@@ -613,7 +613,7 @@
                 <div class="ticket-info">
                   <div>Syahdan Ubaidillah</div>
                   <div class="bullet"></div>
-                  <div>6 hours ago</div>
+                  <div>6 hours agoa</div>
                 </div>
               </a>
               <a href="features-tickets.html" class="ticket-item ticket-more">
