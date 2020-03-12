@@ -7,6 +7,7 @@ import beforeEach from './berforEach'
 
 Vue.use(Router)
 
+console.log(cloud)
 const AppRoute = {
     path: '/',
     component: () => import('../app'),

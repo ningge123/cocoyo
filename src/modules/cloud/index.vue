@@ -84,9 +84,9 @@ export default {
   },
   methods: {
     loadCloud() {
-      this.$http.get("files").then(({ data }) => {
-        this.files = data;
-      });
+      //   this.$http.get("files").then(({ data }) => {
+      //     this.files = data;
+      //   });
     }
   },
   mounted() {

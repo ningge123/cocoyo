@@ -2,6 +2,6 @@ export default [
     {
         path: '/files',
         name: 'files.show',
-        component: () => import('./index')
+        component: () => import('./index.vue')
     }
 ]
