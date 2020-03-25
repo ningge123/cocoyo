@@ -1,17 +1,17 @@
 import { routes as home } from '$modules/home'
 import { routes as auth } from '$modules/auth'
 import { routes as cloud } from '$modules/cloud'
+import { routes as users } from '$modules/users'
 import Vue from 'vue'
 import Router from 'vue-router'
 import beforeEach from './berforEach'
 
 Vue.use(Router)
 
-console.log(cloud)
 const AppRoute = {
     path: '/',
     component: () => import('../app'),
-    children: [...home, ...cloud]
+    children: [...home, ...cloud, ...users]
 }
 
 const AuthRoute = {
@@ -26,7 +26,7 @@ const router = new Router({
     routes,
     linkActiveClass: 'active',
     linkExactActiveClass: 'active',
-    mode: 'history'
+    mode: 'hash'
 })
 
 router.beforeEach(beforeEach)

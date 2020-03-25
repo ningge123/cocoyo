@@ -1,44 +1,46 @@
 <template>
-  <div class="main-wrapper">
-    <navbar />
-    <sidebar />
-    <!-- Main Content -->
-    <div class="main-content">
-      <div class="section">
-        <div class="section-header">
-          <h1>首页</h1>
-          <div class="section-header-breadcrumb">
-            <div id="checkin-div" class="breadcrumb-item active">
-              <a href="#" onclick="checkin()" class="btn btn-icon icon-left btn-primary">
-                <i class="far fa-calendar-check"></i> 每日签到
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="alert alert-warning">您的会员计划已过期，请及时续费。</div>
+  <div id="app">
+    <div class="main-wrapper container">
+      <navbar />
+      <div class="main-content" style="min-height: 288px;">
+        <!-- Main Content -->
+        <!-- <div class="alert alert-warning" v-if="currentUser.id && !currentUser.activated_at">
+          您的邮箱尚未验证，将影响你的正常使用。请先验证您的邮箱，如果未收到邮件，请点击
+          <a
+            href="javascript:void(0)"
+            class="text-blue"
+            @click="sendActiveMail"
+          >重新发送</a>！
+        </div>-->
+
         <router-view />
       </div>
+
+      <footer class="main-footer">
+        <div class="footer-left">
+          Copyright &copy; 2016 - 2020
+          <div class="bullet"></div>Design By
+          <router-link to="/">cocoyo</router-link>
+        </div>
+      </footer>
     </div>
-    <footer class="main-footer">
-      <div class="footer-left">
-        Copyright &copy; 2018
-        <div class="bullet"></div>Design By
-        <a href="https://nauval.in/">Muhamad Nauval Azhar</a>
-      </div>
-      <div class="footer-right">2.3.0</div>
-    </footer>
   </div>
 </template>
 
 <script>
+import { mapGetters } from "vuex";
 import Navbar from "$components/navbar";
-import Sidebar from "$components/sidebar";
 
 export default {
   name: "app",
   components: {
-    Navbar,
-    Sidebar
+    Navbar
+  },
+  computed: {
+    ...mapGetters(["currentUser"])
+  },
+  methods: {
+    sendActiveMail() {}
   }
 };
 </script>

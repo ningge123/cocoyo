@@ -12,16 +12,15 @@ try {
     window.$ = window.jQuery = $
 
     import('bootstrap')
-    import('jquery-sparkline')
-    import('chart.js')
-    import('chocolat')
-    import('jqvmap')
-    import('summernote')
-    import('owl.carousel')
-    import('jquery.nicescroll')
-    import('moment')
-    import('./assets/js/stisla')
-    import('./assets/js/scripts')
+    // import('jquery-sparkline')
+    // import('chart.js')
+    // import('chocolat')
+    // import('summernote')
+    // import('owl.carousel')
+    // import('jquery.nicescroll')
+    // import('moment')
+    // import('./assets/js/stisla')
+    // import('./assets/js/scripts')
 
     // check if the implementation is available
     if (typeof Promise.prototype['finally'] !== 'function') {

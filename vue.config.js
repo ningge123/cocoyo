@@ -43,7 +43,9 @@ module.exports = {
             alias: {
                 $components: path.resolve(__dirname, 'src/components'),
                 $utils: path.resolve(__dirname, 'src/utils'),
-                $modules: path.resolve(__dirname, 'src/modules')
+                $modules: path.resolve(__dirname, 'src/modules'),
+                $assets: path.resolve(__dirname, 'src/assets'),
+                $config: path.resolve(__dirname, 'src/config')
             },
             extensions: ['.vue']
         }
@@ -78,5 +80,24 @@ module.exports = {
         proxy: null
     },
     // options for 3rd party plugins
-    pluginOptions: {}
+    pluginOptions: {},
+
+    // devServer: {
+    //     //测试机器
+    //     /*proxy: 'http://10.60.36.78:8080'*/
+    //     //权洛
+    //     /*proxy: 'http://10.19.4.4'*/
+    //     //嘉宁 10.19.100.117
+    //     port: 8081,
+    //     proxy: {
+    //         '^/': {
+    //             target: 'http://127.0.0.1:8080',
+    //             ws: false,
+    //             changOrigin: true,
+    //             pathRewrite: {
+    //                 '^/': '/'
+    //             }
+    //         }
+    //     }
+    // }
 }

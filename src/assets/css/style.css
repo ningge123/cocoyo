@@ -1027,20 +1027,21 @@ table tr:hover .table-links {
   border: 1px solid #ededed;
   margin-top: -1px; }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #6777ef; }
 
 .nav-pills .nav-item .nav-link {
-  color: #6777ef;
-  padding-left: 15px !important;
-  padding-right: 15px !important; }
+  font-weight: 600;
+  color: #8590a6;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px !important;
+  padding-right: 50px !important; }
   .nav-pills .nav-item .nav-link:hover {
     background-color: #f6f7fe; }
   .nav-pills .nav-item .nav-link.active {
-    box-shadow: 0 2px 6px #acb5f6;
-    color: #fff;
-    background-color: #6777ef; }
+    box-shadow: 0 2px 0px #6777ef;
+    color:#1a1a1a;
+    background-color: unset;
+   }
   .nav-pills .nav-item .nav-link .badge {
     padding: 5px 8px;
     margin-left: 5px; }
@@ -1394,7 +1395,7 @@ h6 .badge {
 
 .media .media-title {
   margin-top: 0;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
   font-weight: 600;
   font-size: 15px;
   color: #34395e; }
@@ -1537,13 +1538,13 @@ h6 .badge {
   left: 0;
   width: 100%;
   height: 115px;
-  background-color: #6777ef;
+  background-color: #fff;
   z-index: -1; }
 
 .navbar {
   align-items: center; }
   .navbar .navbar-brand {
-    color: #fff;
+    color: #8590a6;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 700; }
@@ -1633,12 +1634,12 @@ h6 .badge {
         text-align: center;
         border-radius: 50%; }
   .navbar .active .nav-link {
-    color: #fff;
+    color: #8590a6;
     font-weight: 700; }
   .navbar .navbar-text {
-    color: #fff; }
+    color: #8590a6; }
   .navbar .nav-link {
-    color: #f2f2f2;
+    color: #8590a6;
     padding-left: 15px !important;
     padding-right: 15px !important;
     padding-top: 0 !important;
@@ -1651,7 +1652,7 @@ h6 .badge {
       font-size: 18px;
       line-height: 32px; }
     .navbar .nav-link.nav-link-user {
-      color: #fff;
+      color: #8590a6;
       padding-top: 4px;
       padding-bottom: 4px;
       font-weight: 600; }
@@ -1674,7 +1675,7 @@ h6 .badge {
   display: none; }
 
 .navbar .nav-link:hover {
-  color: #fff; }
+  color: #444; }
 
 .navbar .nav-link.disabled {
   color: #fff;
@@ -2638,8 +2639,8 @@ body.layout-2 .main-footer {
   padding-right: 0; }
 
 body.layout-3 .navbar {
-  left: 0;
-  right: 0; }
+  left: auto;
+  right: auto; }
 
 body.layout-3 .navbar.navbar-secondary {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
